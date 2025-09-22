@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace AnimalZoo
 {
-    internal class Bird
+    public class Bird: Animal
     {
+
+        public Bird() : base()
+        {
+
+        }
+        public void Fly()
+        {
+
+        }
     }
 }
