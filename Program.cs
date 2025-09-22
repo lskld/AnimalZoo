@@ -5,58 +5,119 @@
         
         static void Main(string[] args)
         {
-            
+           
         }
 
-        class Animal()
+        class Animal
         {
-            /* 
-            * Space for 5 common Animal properties
-            * 
-            * 
-            * 
-            * 
-            */
+            /* 5 common properties */
+            public int legs;
+            public string? color;
+            public string? sound;
+            public bool carnivore;
+            public bool friendly;                      
+
+            public Animal()
+            {
+                legs = 4;
+                color = "white";
+                sound = "brrrr";
+                carnivore = false;
+                friendly = false;
+
+            }
             
-            static void MakeSound()
+            public void MakeSound()
             {
-
-            } 
-
-            static void Eat()
-            {
-
+                Console.WriteLine(sound);
             }
 
-            static void Sleep()
+            public void Eat()
             {
-
+                Console.WriteLine("The animal is eating");
             }
 
-        }
-
-        class Dog: Animal
-        {
-
-            static void Sit()
+            public void Sleep()
             {
-
+                Console.WriteLine("The animal is sleeping");
             }
+
         }
 
         class Cat: Animal
-        {           
-
-            static void Attack()
+        {
+            public bool outsideCat = true;
+            public Cat() : base()              
             {
-
+                legs = 4;
+                color = "black";
+                sound = "Meow!";
+                carnivore = true;
+                friendly = false;
+            }
+            public void Attack()
+            {
+                
             }
         }
 
         class Bird: Animal
         {
+            public bool canFly = true;
+            public Bird()
+            {
+                legs = 2;
+                color = "red";
+                sound = "Craaaaw!";
+                carnivore = false;
+                friendly = false;
+            }
+            public void Fly ()
+            {
+               
+            }
+        }
 
-            static void Fly ()
+        class Dog : Animal
+        {
+            public bool canSit = true;
+
+            public Dog()
+            {
+                legs = 4;
+                color = "brown";
+                sound = "Woof!";
+                carnivore = true;
+                friendly = true;
+            }
+            public void Sit()
+            {
+               
+            }
+        }
+
+        class Labrador : Dog
+        {
+
+            public Labrador()
+            {
+
+            }
+            public void PrettyPaw()
+            {
+
+            }
+
+        }
+
+        class Daschund : Dog
+        {
+
+            public Daschund()
+            {
+            
+            }
+            public void PlayDead()
             {
 
             }
