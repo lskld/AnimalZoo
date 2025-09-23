@@ -1,4 +1,6 @@
-﻿namespace AnimalZoo
+﻿//Theo Lilliesköld, NET25
+
+namespace AnimalZoo
 {
     internal class Program
     {
