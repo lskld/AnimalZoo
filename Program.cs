@@ -6,22 +6,13 @@ namespace AnimalZoo
     {
         
         static void Main(string[] args)
-        {        
-            Dog myDog = new Dog();
-            myDog.MakeSound();
+        {
+            Animal[] animals = { new Dog(), new Cat(), new Bird(), new Labrador(), new Dachshund() };
 
-            Cat myCat = new Cat();
-            myCat.MakeSound();
-
-            Bird myBird = new Bird();
-            myBird.MakeSound();
-
-            Labrador myLabrador = new Labrador();
-            myLabrador.MakeSound();
-
-            Dachshund myDachshund = new Dachshund();
-            myDachshund.MakeSound();
+            foreach (var animal in animals)
+            {
+                animal.MakeSound();
+            }
         }
-
     }
 }
